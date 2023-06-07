@@ -1,0 +1,543 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+
+}
+.places{
+    border-radius: 5%;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+}
+.pocup p{
+    position: relative;
+    font-family: 'Century Gothic';
+    font-size: 20pt;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pocup{
+    display: none;
+    border-radius: 5%;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    position: fixed;
+    background-color: white;
+    width: 10%;
+    height: 80px;
+}
+.podloj{
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 1650px;
+    z-index: 90;
+    opacity: 100%;
+}
+.all_plc{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    height: 80%;
+}
+.screen{
+    margin: 0 auto;
+    width: 60%;
+    background-size:cover;
+    height: 16%;
+    background-image: url(screen.png);
+}
+.row1, .row2, .row3, .row4{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    height: 15%;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.seat{
+    vertical-align: middle;
+    font-family: 'Century Gothic';
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 5.5%;
+    height:40%;
+}
+.num{
+    font-family: 'Century Gothic'
+}
+.ths{   
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25pt;
+    text-align: center;
+    z-index: 100;
+    display: none;
+    font-family: 'Century Gothic'
+}
+.header{
+    padding-left: 18%;
+    padding-right: 18%;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.right_h{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header a{
+    text-decoration: none;
+    padding: auto;
+}
+.text_r{
+    font-family: 'Century Gothic';
+    font-size: 18pt;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+}
+.left_h{
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Century Gothic';
+    font-size: 18pt;
+    color: white;
+}
+.contacts{
+    cursor: pointer;
+}
+.logo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("pf.png");
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+}
+.fon1{
+    background-image: url("5.png");
+    width: 100%;
+    height: 1650px;
+    background-position:top;
+    background-size: cover;
+}
+.films_main{
+    padding-top: 70px;
+    background-color: black;
+    width: 80%;
+    height: 1700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: 1px 0px 29px 38px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 1px 0px 29px 38px rgba(0, 0, 0, 0.42);
+    box-shadow: 1px 0px 29px 38px rgba(0, 0, 0, 0.42);
+}
+.container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40%;
+    width: 80%;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+.poster{
+    position: relative;
+    background-image: url("kinogallery.com-planet-melancholia-300553.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 98%;
+}
+.btn_buy{
+    cursor: pointer;
+    background-color: white;
+    height: 80px;
+    width: 300px;
+    font-family: 'Century Gothic';
+    font-size: 24pt;
+    margin-top: 90px;
+    transition: 0.5s all 0s ease;
+}
+.btn_buy p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.btn_buy:hover{
+    scale: 1.05;
+}
+.block1{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: 'Century Gothic';
+    font-size: 48pt;
+    color: white;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.genre{
+    width: 55%;
+}
+.year, .contry, .genre2, .director{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.box{
+    font-family: 'Century Gothic';
+    font-size: 18pt;
+    color: white;
+}
+.line{
+    background-color: white;
+    width: 100%;
+    height: 0.5px;
+}
+.about{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+.title_about{
+    margin-bottom: 25px;
+    font-family: 'Century Gothic';
+    font-size: 20pt;
+    color: white;
+}
+.text{
+    font-family: 'Century Gothic';
+    font-size: 14pt;
+    color: white;
+    text-align: justify;
+    margin-bottom: 70px;
+}
+.from_movie{
+    height: 500px;
+}
+.bLeft, .bRight{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.frame{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    background-color: white;
+    width: 65%;
+    height: 100%;
+}
+.bLeft{
+    display: none;
+}
+.bRight{
+    display: none;
+}
+.slider{
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease 0s all;
+    position: relative;
+    left:0px;
+    height: 100%;
+    width: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 170px;
+    font-family: 'Century Gothic';
+    font-size: 18pt;
+    color: white;
+    padding-top: 30px;
+    padding-left: 18%;
+}
+.footer p{
+    position: relative;
+    top: 10%;
+    transform: translateY(-50%);
+}
+@media (max-width:1650px){
+    .poster{
+        position: relative;
+        background-image: url("kinogallery.com-planet-melancholia-300553.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 38%;
+        height: 98%;
+    }
+}
+@media (max-width:1440px){
+
+    .box{
+        font-size: 14pt;
+    }
+    .poster{
+        position: relative;
+        background-image: url("kinogallery.com-planet-melancholia-300553.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 38%;
+        height: 85%;
+    }
+    .fon1{
+        background-image: url("5.png");
+        width: 100%;
+        height: 1700px;
+        background-position:top;
+        background-size: cover;
+    }
+}
+@media (max-width:1165px){
+    .screen{
+        width: 80%;
+        height: 13%;
+        background-size: cover; 
+    }
+    .left_h{
+        font-size: 14pt;
+    }
+    .text_r{
+        font-size: 14pt;
+    }
+    .poster{
+        margin-right: 30px;
+        position: relative;
+        background-image: url("kinogallery.com-planet-melancholia-300553.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 70%;
+    }
+    .title{
+        font-size: 36pt;
+    }
+    .box{
+        font-size: 10pt;
+    }
+    .container{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40%;
+        width: 80%;
+        padding-top: 70px;
+        margin-bottom: 70px;
+    }
+    .from_movie{
+        display: none;
+    }
+    .pic{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("asd.png");
+        height:400px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (max-width:882px){
+    .footer{
+        font-size: 14pt;
+    }
+    .seat{
+        width: 20px;
+        height: 20px;
+    }
+    .screen{
+        height: 10%;
+    }
+    .poster{
+        margin-right: 30px;
+        position: relative;
+        background-image: url("kinogallery.com-planet-melancholia-300553.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 55%;
+    }
+    .title{
+        font-size: 32pt;
+    }
+    .box{
+        font-size: 8pt;
+    }
+    .pic{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("asd.png");
+        height:300px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (max-width:768px){
+    .header{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .screen{
+        height: 10%;
+    }
+    .num{
+        display: none;
+    }
+    .row1, .row2, .row3, .row4{
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        height: 15%;
+        width: 90%;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+    .pic{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("asd.png");
+        height:300px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btn_buy{
+        background-color: white;
+        height: 60px;
+        width: 200px;
+        font-family: 'Century Gothic';
+        font-size: 18pt;
+        margin-top: 90px;
+        transition: 0.5s all 0s ease;
+    }
+}
+@media (max-width:425px){
+    .left_h{
+        font-size: 12pt;
+    }
+    .num{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .pic{
+        display: none;
+    }
+    .block1{
+        display: block;
+    }
+    .container{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40%;
+        width: 80%;
+        padding-top: 70px;
+        margin-bottom: 70px;
+    }
+    .poster{
+        margin-bottom: 40px;
+        width: 100%;
+        height: 400px;
+    }
+    .genre{
+        width: 100%;
+    }
+    .btn_buy{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .films_main{
+        height: 1100px;
+    }
+    .fon1{
+        height: 1100px;
+    }
+}
+@media (max-width:375px){
+    .footer{
+        font-size: 10pt;
+    }
+    .poster{
+        margin-bottom: 40px;
+        width: 100%;
+        height: 350px;
+    }
+}
+@media (max-width:320px){
+    .header{
+        padding-left: 0px;
+        padding-right: 5%;
+    }
+    .films_main{
+        width: 100%;
+    }
+    .poster{
+        margin-bottom: 40px;
+        width: 100%;
+        height: 360px;
+    }
+}
+
